@@ -1,0 +1,13 @@
+appdirs==1.4.3
+BeautifulSoup==3.2.1
+beautifulsoup4==4.6.0
+html5lib==0.999999999
+mechanize==0.3.3
+packaging==16.8
+pyparsing==2.2.0
+requests==2.14.2
+six==1.10.0
+webencodings==0.5.1
+-e git://github.com/charlierguo/gmail.git#egg=gmail
+Jinja2==2.9.6
+python-dotenv==0.6.4
