@@ -1,7 +1,7 @@
 # pypi
 
 ## Purpose
-To demonstrate how to exploit PyPI's lack of security practices by creating an automated process to spread a malicious payload.
+To demonstrate how to exploit PyPI's lack of security practices by creating an automated process to spread a potentially malicious payload. This script will create a randomly named python package on PyPI, with a potentially malicious payload that will run on the system that the PyPI package was downloaded from.
 
 ## Run
 1. Write your payload and put it in `setup.template`.
