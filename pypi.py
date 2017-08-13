@@ -81,8 +81,6 @@ def is_registered(module_name):
     return True if resp.status_code == OK else False
 
 if __name__ == '__main__':
-    # print get_top_packages(page=2)
-    # print is_registered('requests')
     username = random_string(10)
     password = random_string(16)
     print 'Registering user: %s with password: %s...' % (username, password)
